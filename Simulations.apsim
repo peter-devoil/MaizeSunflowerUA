@@ -1,0 +1,2343 @@
+<folder version="37" creator="Apsim 7.10-r0" name="simulations">
+  <simulation name="Simulation">
+    <metfile name="met">
+      <filename name="filename" input="yes">46.01_29.76.met</filename>
+    </metfile>
+    <clock>
+      <start_date type="date" description="Enter the start date of the simulation">01/01/2004</start_date>
+      <end_date type="date" description="Enter the end date of the simulation">31/12/2004</end_date>
+      <targets type="text" description="targets" />
+      <vars type="text" description="vars" />
+    </clock>
+    <summaryfile />
+    <area name="paddock">
+      <Soil>
+        <RecordNumber>0</RecordNumber>
+        <Latitude>0</Latitude>
+        <Longitude>0</Longitude>
+        <YearOfSampling>0</YearOfSampling>
+        <InitialWater name="Initial water">
+          <FractionFull>0.95</FractionFull>
+          <DepthWetSoil>NaN</DepthWetSoil>
+          <PercentMethod>FilledFromTop</PercentMethod>
+          <RelativeTo>ll15</RelativeTo>
+        </InitialWater>
+        <Water>
+          <Thickness>
+            <double>100</double>
+            <double>100</double>
+            <double>100</double>
+            <double>200</double>
+            <double>200</double>
+            <double>200</double>
+            <double>200</double>
+            <double>200</double>
+            <double>200</double>
+            <double>200</double>
+          </Thickness>
+          <BD>
+            <double>1.35</double>
+            <double>1.35</double>
+            <double>1.35</double>
+            <double>1.4</double>
+            <double>1.4</double>
+            <double>1.4</double>
+            <double>1.4</double>
+            <double>1.4</double>
+            <double>1.4</double>
+            <double>1.4</double>
+          </BD>
+          <AirDry>
+            <double>0.04</double>
+            <double>0.14</double>
+            <double>0.15</double>
+            <double>0.16</double>
+            <double>0.18</double>
+            <double>0.18</double>
+            <double>0.18</double>
+            <double>0.18</double>
+            <double>0.18</double>
+            <double>0.18</double>
+          </AirDry>
+          <LL15>
+            <double>0.11</double>
+            <double>0.14</double>
+            <double>0.16</double>
+            <double>0.17</double>
+            <double>0.19</double>
+            <double>0.2</double>
+            <double>0.2</double>
+            <double>0.2</double>
+            <double>0.2</double>
+            <double>0.2</double>
+          </LL15>
+          <DUL>
+            <double>0.22</double>
+            <double>0.25</double>
+            <double>0.27</double>
+            <double>0.28</double>
+            <double>0.3</double>
+            <double>0.3</double>
+            <double>0.31</double>
+            <double>0.32</double>
+            <double>0.31</double>
+            <double>0.31</double>
+          </DUL>
+          <SAT>
+            <double>0.3</double>
+            <double>0.3</double>
+            <double>0.32</double>
+            <double>0.33</double>
+            <double>0.34</double>
+            <double>0.35</double>
+            <double>0.36</double>
+            <double>0.37</double>
+            <double>0.37</double>
+            <double>0.37</double>
+          </SAT>
+          <SoilCrop name="sunflower">
+            <Thickness>
+              <double>100</double>
+              <double>100</double>
+              <double>100</double>
+              <double>200</double>
+              <double>200</double>
+              <double>200</double>
+              <double>200</double>
+              <double>200</double>
+              <double>200</double>
+              <double>200</double>
+            </Thickness>
+            <LL>
+              <double>0.11</double>
+              <double>0.14</double>
+              <double>0.16</double>
+              <double>0.17</double>
+              <double>0.19</double>
+              <double>0.2</double>
+              <double>0.2</double>
+              <double>0.2</double>
+              <double>0.2</double>
+              <double>0.2</double>
+            </LL>
+            <KL>
+              <double>0.08</double>
+              <double>0.08</double>
+              <double>0.08</double>
+              <double>0.08</double>
+              <double>0.06</double>
+              <double>0.04</double>
+              <double>0.03</double>
+              <double>0.02</double>
+              <double>0.01</double>
+              <double>0.01</double>
+            </KL>
+            <XF>
+              <double>1</double>
+              <double>1</double>
+              <double>1</double>
+              <double>1</double>
+              <double>1</double>
+              <double>1</double>
+              <double>1</double>
+              <double>1</double>
+              <double>1</double>
+              <double>1</double>
+            </XF>
+          </SoilCrop>
+          <SoilCrop name="maize">
+            <Thickness>
+              <double>100</double>
+              <double>100</double>
+              <double>100</double>
+              <double>200</double>
+              <double>200</double>
+              <double>200</double>
+              <double>200</double>
+              <double>200</double>
+              <double>200</double>
+              <double>200</double>
+            </Thickness>
+            <LL>
+              <double>0.11</double>
+              <double>0.14</double>
+              <double>0.16</double>
+              <double>0.17</double>
+              <double>0.19</double>
+              <double>0.2</double>
+              <double>0.2</double>
+              <double>0.2</double>
+              <double>0.2</double>
+              <double>0.2</double>
+            </LL>
+            <KL>
+              <double>0.08</double>
+              <double>0.08</double>
+              <double>0.08</double>
+              <double>0.08</double>
+              <double>0.06</double>
+              <double>0.04</double>
+              <double>0.03</double>
+              <double>0.02</double>
+              <double>0.01</double>
+              <double>0.01</double>
+            </KL>
+            <XF>
+              <double>1</double>
+              <double>1</double>
+              <double>1</double>
+              <double>1</double>
+              <double>1</double>
+              <double>1</double>
+              <double>1</double>
+              <double>1</double>
+              <double>1</double>
+              <double>1</double>
+            </XF>
+          </SoilCrop>
+        </Water>
+        <SoilWater>
+          <SummerCona>2.5</SummerCona>
+          <SummerU>9</SummerU>
+          <SummerDate>1-Nov</SummerDate>
+          <WinterCona>2.5</WinterCona>
+          <WinterU>9</WinterU>
+          <WinterDate>1-Apr</WinterDate>
+          <DiffusConst>88</DiffusConst>
+          <DiffusSlope>35.4</DiffusSlope>
+          <Salb>0.13</Salb>
+          <CN2Bare>75</CN2Bare>
+          <CNRed>20</CNRed>
+          <CNCov>0.8</CNCov>
+          <Thickness>
+            <double>100</double>
+            <double>100</double>
+            <double>100</double>
+            <double>200</double>
+            <double>200</double>
+            <double>200</double>
+            <double>200</double>
+            <double>200</double>
+            <double>200</double>
+            <double>200</double>
+          </Thickness>
+          <SWCON>
+            <double>0.5</double>
+            <double>0.5</double>
+            <double>0.5</double>
+            <double>0.5</double>
+            <double>0.5</double>
+            <double>0.5</double>
+            <double>0.5</double>
+            <double>0.5</double>
+            <double>0.5</double>
+            <double>0.5</double>
+          </SWCON>
+        </SoilWater>
+        <SoilOrganicMatter>
+          <RootCN>45</RootCN>
+          <RootWt>1000</RootWt>
+          <SoilCN>14.5</SoilCN>
+          <EnrACoeff>7.4</EnrACoeff>
+          <EnrBCoeff>0.2</EnrBCoeff>
+          <Thickness>
+            <double>100</double>
+            <double>100</double>
+            <double>100</double>
+            <double>200</double>
+            <double>200</double>
+            <double>200</double>
+            <double>200</double>
+            <double>200</double>
+            <double>200</double>
+            <double>200</double>
+          </Thickness>
+          <OC>
+            <double>1.2</double>
+            <double>1</double>
+            <double>0.86</double>
+            <double>0.83</double>
+            <double>0.58</double>
+            <double>0.54</double>
+            <double>0.47</double>
+            <double>0.5</double>
+            <double>0.5</double>
+            <double>0.5</double>
+          </OC>
+          <FBiom>
+            <double>0.02</double>
+            <double>0.01</double>
+            <double>0.01</double>
+            <double>0.01</double>
+            <double>0.01</double>
+            <double>0.01</double>
+            <double>0.01</double>
+            <double>0.01</double>
+            <double>0.01</double>
+            <double>0.01</double>
+          </FBiom>
+          <FInert>
+            <double>0.6</double>
+            <double>0.65</double>
+            <double>0.7</double>
+            <double>0.75</double>
+            <double>0.8</double>
+            <double>0.85</double>
+            <double>0.93</double>
+            <double>0.93</double>
+            <double>0.93</double>
+            <double>0.93</double>
+          </FInert>
+          <OCUnits>Total</OCUnits>
+        </SoilOrganicMatter>
+        <Analysis>
+          <Thickness>
+            <double>100</double>
+            <double>100</double>
+            <double>100</double>
+            <double>200</double>
+            <double>200</double>
+            <double>200</double>
+            <double>200</double>
+            <double>200</double>
+            <double>200</double>
+            <double>200</double>
+          </Thickness>
+          <Texture>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Texture>
+          <MunsellColour>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </MunsellColour>
+          <PH>
+            <double>6</double>
+            <double>6</double>
+            <double>6</double>
+            <double>6.2</double>
+            <double>6.5</double>
+            <double>6.7</double>
+            <double>6.8</double>
+            <double>6.8</double>
+            <double>6.8</double>
+            <double>6.8</double>
+          </PH>
+          <PHUnits>Water</PHUnits>
+          <BoronUnits>HotWater</BoronUnits>
+        </Analysis>
+        <Sample name="Initial nitrogen">
+          <Thickness>
+            <double>100</double>
+            <double>100</double>
+            <double>100</double>
+            <double>200</double>
+            <double>200</double>
+            <double>200</double>
+            <double>200</double>
+            <double>200</double>
+            <double>200</double>
+            <double>200</double>
+          </Thickness>
+          <NO3>
+            <double>30</double>
+            <double>20</double>
+            <double>10</double>
+            <double>5</double>
+            <double>5</double>
+            <double>1</double>
+            <double>1</double>
+            <double>1</double>
+            <double>1</double>
+            <double>1</double>
+          </NO3>
+          <NH4>
+            <double>0</double>
+            <double>0</double>
+            <double>0</double>
+            <double>0</double>
+            <double>0</double>
+            <double>0</double>
+            <double>0</double>
+            <double>0</double>
+            <double>0</double>
+            <double>0</double>
+          </NH4>
+          <NO3Units>kgha</NO3Units>
+          <NH4Units>ppm</NH4Units>
+          <SWUnits>Volumetric</SWUnits>
+          <OCUnits>Total</OCUnits>
+          <PHUnits>Water</PHUnits>
+        </Sample>
+      </Soil>
+      <surfaceom name="SurfaceOrganicMatter">
+        <PoolName description="Organic Matter pool name">wheat</PoolName>
+        <type description="Organic Matter type">wheat</type>
+        <mass description="Initial surface residue (kg/ha)">0</mass>
+        <cnr description="C:N ratio of initial residue">80.0</cnr>
+        <standing_fraction description="Fraction of residue standing">0.0</standing_fraction>
+      </surfaceom>
+      <fertiliser />
+      <maize />
+      <sunflower />
+      <folder name="Manager folder">
+        <manager2 name="Setup">
+          <ui>
+            <thisCrop type="text" description="Crop to simulate">Sunflower</thisCrop>
+            <csvFile type="text" description="CSV file of treatments">Baseline_with_SM.csv</csvFile>
+            <thisStation type="text" description="Station Name (lat_lng)">46.01_29.76</thisStation>
+          </ui>
+          <text>using System;
+using System.Text;
+
+using System.Collections.Generic;
+using System.IO;
+using ModelFramework;
+
+public class Script 
+{      
+   [Link] public Simulation simulation;
+   [Link] public Paddock paddock;
+   [Input] DateTime Today; 
+   [Param] string csvFile;
+   [Param, Output] string thisCrop;
+   [Param, Output] string thisStation;
+   [Output] int thisYear;
+   
+   private Dictionary&lt;string, string&gt; cultivar;
+   private Dictionary&lt;string, double&gt; density;
+   private double row_spacing = 500; //mm
+   private double depth = 30; // sowing depth (mm)
+   [Output] private DateTime sowingDate;   
+   
+   [EventHandler] public void OnInitialised()
+   {
+      // set up the dictionaries for crop-specific details
+      cultivar = new Dictionary&lt;string, string&gt;();
+      cultivar.Add("Maize", "medium");
+      cultivar.Add("Sunflower", "Medium");
+
+      density = new Dictionary&lt;string, double&gt;(); // plants / sq meter
+      density.Add("Maize", 4);
+      density.Add("Sunflower", 3);
+      
+      bool found = false;
+
+      Component clockModule = (Component) simulation.LinkByName("clock");
+      clockModule.Get("year", out thisYear);
+      
+      // Read the table of sowing dates
+      using (StreamReader sr = new StreamReader(csvFile))
+      {
+         List&lt;string&gt; headers = SplitStringHonouringQuotes(sr.ReadLine(), ",");
+         var latCol = headers.IndexOf("Lat");
+         if (latCol &lt; 0) {throw new Exception("Missing Latitude");}
+         
+         var longCol = headers.IndexOf("Long");
+         if (longCol &lt; 0) {throw new Exception("Missing Longitude");}
+                
+         var yearCol = headers.IndexOf("year");
+         if (yearCol &lt; 0) {throw new Exception("Missing year column");}
+
+         var cropCol = headers.IndexOf("crop");
+         if (cropCol &lt; 0) {throw new Exception("Missing crop column");}
+         var lineCnt = 1;
+
+         while (!sr.EndOfStream)
+         {
+            string[] row = SplitStringHonouringQuotes(sr.ReadLine(), ",").ToArray();
+            double rowYear = 0;
+            Double.TryParse(row[yearCol], out rowYear);
+            
+            if (thisStation == row[latCol].ToString() + "_" + row[longCol].ToString() &amp;&amp;
+                thisYear == rowYear &amp;&amp;
+                thisCrop.ToLower() == row[cropCol].ToLower()) {
+               
+               Console.WriteLine("Found row on line " + lineCnt.ToString());
+               found = true;
+               var dCol = headers.IndexOf("datsow");
+               if (dCol &lt; 0) {throw new Exception("Missing sowing date column");}
+
+               sowingDate = DateTime.Parse(row[dCol]);
+            }
+            lineCnt++;
+         }
+      }
+      if (!found) {
+         throw new Exception("No treatment data for year = " + thisYear + ", crop = " + thisCrop + ", station = " + thisStation );
+      }
+   }
+
+   [EventHandler] public void OnPrepare()
+   {
+      //Console.WriteLine("Today = " + Today.ToString("dd/MM/yyyy") + " vs " + datsow.ToString("dd/MM/yyyy"));
+      if (DateTime.Compare(sowingDate, Today) == 0) {
+         DoSowCrop();
+      }
+   }
+   
+   [EventHandler] public void OnPost()
+   {
+      Component cropModule = (Component) paddock.LinkByName(thisCrop);
+      string plantStatus = "";
+      cropModule.Get("plant_status", out plantStatus);
+      if (plantStatus != "out") {
+         string StageName = "";
+         cropModule.Get("StageName", out StageName);
+         if (StageName == "harvest_ripe" || plantStatus == "dead") {
+            DoHarvestCrop();
+         }
+      }
+   }
+   
+   [EventHandler, Description("Sow the crop")] public void DoSowCrop()
+   {
+      Console.WriteLine(Today.ToString("dd/MM/yyyy") + " Sowing Crop");
+      SowType data = new SowType();
+      data.Cultivar = cultivar[thisCrop];
+
+      data.plants = density[thisCrop];
+      data.sowing_depth = depth;
+      data.row_spacing = row_spacing;
+      string currentPaddock;
+      
+      Component cropModule = (Component) paddock.LinkByName(thisCrop);
+
+      cropModule.Publish("Sow", data);
+   }
+
+
+   public void DoHarvestCrop()
+   {
+      Console.WriteLine(Today + " Harvesting Crop");
+      HarvestType hdata = new HarvestType();
+      hdata.Remove = 0.0;
+      Component cropModule = (Component) paddock.LinkByName(thisCrop);
+      cropModule.Publish("harvest", hdata);
+
+      KillCropType kdata = new KillCropType();
+      kdata.KillFraction = 0.0F;
+      cropModule.Publish("killcrop", kdata);
+      cropModule.Publish("end_crop");
+   } 
+
+   
+/////////// Helpers   
+   /// This method splits values on a comma but also honours double quotes
+   /// ensuring something in double quotes is never split.
+   ///     eg: if text = value1, "value 2, 2a", value3
+   ///     then: words[0] = value1
+   ///           words[1] = value2, 2a
+   ///           words[2] = value3
+   /// All values returned have been trimmed of spaces and double quotes.
+   /// &lt;/summary&gt;
+   public List&lt;string&gt; SplitStringHonouringQuotes(string text, string delimiters)
+   {
+      List&lt;string&gt; ReturnStrings = new List&lt;string&gt;();
+      if (text.Trim() == "")
+         return ReturnStrings;
+
+      bool InsideQuotes = false;
+      int Start = IndexNotOfAny(text, " ".ToCharArray());
+      for (int i = Start; i &lt; text.Length; i++)
+      {
+         if (text[i] == '"')
+            InsideQuotes = !InsideQuotes; // toggle
+
+         else if (!InsideQuotes)
+         {
+            if (delimiters.IndexOf(text[i]) != -1)
+            {
+               // Found a word - store it.
+               if (Start != i)
+                  ReturnStrings.Add(text.Substring(Start, i - Start).Trim(" ".ToCharArray()));
+               Start = i + 1;
+
+            }
+         }
+      }
+      if (Start != text.Length)
+         ReturnStrings.Add(text.Substring(Start, text.Length - Start).Trim(" ".ToCharArray()));
+
+      // remove leading and trailing quote if necessary.
+      for (int i = 0; i &lt; ReturnStrings.Count; i++)
+      {
+         if (ReturnStrings[i][0] == '"' &amp;&amp; ReturnStrings[i][ReturnStrings[i].Length - 1] == '"')
+         {
+            ReturnStrings[i] = ReturnStrings[i].Substring(1, ReturnStrings[i].Length - 2).Trim();
+            if (ReturnStrings[i] == "")
+            {
+               ReturnStrings.RemoveAt(i);
+               i--;
+            }
+         }
+      }
+      return ReturnStrings;
+   }
+   public int IndexNotOfAny(string text, char[] delimiters)
+   {
+      return IndexNotOfAny(text, delimiters, 0);
+   }
+
+   /// &lt;summary&gt;
+   /// This method complements the string function IndexOfAny by
+   /// providing a NOT version. Returns -1 if non of the specified
+   /// characters are found in specified string.
+   /// &lt;/summary&gt;
+   public int IndexNotOfAny(string text, char[] delimiters, int pos)
+   {
+      string DelimitersString = new string(delimiters);
+      for (int i = pos; i &lt; text.Length; i++)
+      {
+         if (DelimitersString.IndexOf(text[i]) == -1)
+            return i;
+      }
+      return -1;
+   }
+   
+   // Apsim isnt aware of unicode strings.
+   private string UnicodeString(string text)
+   {
+      return Encoding.UTF8.GetString(Encoding.ASCII.GetBytes(text));
+   }
+}
+  </text>
+        </manager2>
+        <manager name="Remove all residues on a fixed date">
+          <ui>
+            <category description="Removal criteria" type="category" />
+            <date type="ddmmmdate" description="Date to remove residues (dd-mmm) :">1-may</date>
+            <surfaceommodule type="modulename" description="Name of your surface organic matter module : ">SurfaceOrganicMatter</surfaceommodule>
+          </ui>
+          <script>
+            <text>
+         if today = date('[date]') then
+            '[surfaceommodule]' tillage type = user_defined, f_incorp = 1.0 (), tillage_depth = 0.0 ()
+         endif
+            </text>
+            <event>start_of_day</event>
+          </script>
+        </manager>
+      </folder>
+      <outputfile>
+        <filename name="filename" output="yes">Simulation.out</filename>
+        <title>Simulation</title>
+        <variables name="Variables">
+          <variable>thisStation as Station</variable>
+          <variable>thisYear as Year</variable>
+          <variable>thisCrop as Crop</variable>
+          <variable>flowering_das as Sunflower_FLDAS</variable>
+          <variable>FloweringDAS as Maize_FLDAS</variable>
+          <variable>maturity_das as Sunflower_MATDAS</variable>
+          <variable>MaturityDAS as Maize_MATDAS</variable>
+          <variable>dd/mm/yyyy as HarvestDate</variable>
+          <variable>esw</variable>
+          <variable>yield</variable>
+          <variable>stover</variable>
+          <variable>biomass</variable>
+        </variables>
+        <events name="Events">
+          <event>harvesting</event>
+        </events>
+      </outputfile>
+    </area>
+  </simulation>
+  <factorial name="Factorials">
+    <active>1</active>
+    <settings />
+    <factor name="Crop">
+      <targets>
+        <Target>/simulations/Simulation/paddock/Manager folder/Setup</Target>
+      </targets>
+      <vars>
+        <thisCrop>Maize,Sunflower</thisCrop>
+      </vars>
+      <manager2 name="Setup">
+        <ui>
+          <thisCrop type="text" description="Crop to simulate">maize</thisCrop>
+          <csvFile type="text" description="CSV file of treatments">Baseline_with_SM.csv</csvFile>
+          <thisYear type="text" description="The year of this simulation">2004</thisYear>
+          <thisStation type="text" description="Station Name">Сарата</thisStation>
+        </ui>
+        <text>using System;
+using System.Collections.Generic;
+using System.IO;
+using ModelFramework;
+
+public class Script 
+{      
+   [Link] public Simulation simulation;
+   [Link] public Paddock paddock;
+   [Input] DateTime Today; 
+   [Param] string csvFile;
+   [Param, Output] string thisCrop;
+   [Param, Output] int thisYear;
+   [Param, Output] string thisStation;
+   
+   private Dictionary&lt;string, string&gt; cultivar;
+   private Dictionary&lt;string, double&gt; density;
+   private double row_spacing = 500; //mm
+   private double depth = 30; // sowing depth (mm)
+   
+   
+   [EventHandler] public void OnInitialised()
+   {
+      // set up the dictionaries for crop-specific details
+      cultivar = new Dictionary&lt;string, string&gt;();
+      cultivar.Add("Maize", "SC601");
+      cultivar.Add("Sunflower", "default");
+
+      density = new Dictionary&lt;string, double&gt;(); // plants / sq meter
+      density.Add("Maize", 4);
+      density.Add("Sunflower", 3);
+
+      // Read the table of sowing dates
+      using (StreamReader sr = new StreamReader(csvFile))
+      {
+         List&lt;string&gt; headers = SplitStringHonouringQuotes(sr.ReadLine(), ",");
+         var stationCol = headers.IndexOf("station");
+         if (stationCol &lt; 0) {throw new Exception("Missing station column");}
+                
+         var yearCol = headers.IndexOf("year");
+         if (yearCol &lt; 0) {throw new Exception("Missing year column");}
+
+         var cropCol = headers.IndexOf("crop");
+         if (cropCol &lt; 0) {throw new Exception("Missing crop column");}
+
+         while (!sr.EndOfStream)
+         {
+            string[] row = SplitStringHonouringQuotes(sr.ReadLine(), ",").ToArray();
+            double rowYear = 0;
+            Double.TryParse(row[yearCol], out rowYear);
+            if (thisStation == row[stationCol] &amp;&amp;
+                thisYear == rowYear &amp;&amp;
+                thisCrop == row[cropCol]) {
+               
+               Console.WriteLine("Found row");
+               //myCommands.Add(rows[cmdCol]);
+            }
+         }
+      }
+   }
+
+   [EventHandler] public void OnPrepare()
+   {
+
+   }
+   
+   [EventHandler] public void OnPost()
+   {
+      Component cropModule = (Component) paddock.LinkByName(thisCrop);
+      string plantStatus = "";
+      cropModule.Get("plant_status", out plantStatus);
+      if (plantStatus != "out") {
+         string StageName = "";
+         cropModule.Get("StageName", out StageName);
+         if (StageName == "harvest_ripe" || plantStatus == "dead") {
+            DoHarvestCrop();
+         }
+      }
+   }
+   
+   [EventHandler, Description("Sow the crop")] public void DoSowCrop()
+   {
+      Console.WriteLine(Today.ToString("dd/MM/yyyy") + " Sowing Crop");
+      SowType data = new SowType();
+      data.Cultivar = cultivar[thisCrop];
+
+      data.plants = density[thisCrop];
+      data.sowing_depth = depth;
+      data.row_spacing = row_spacing;
+      string currentPaddock;
+      
+      Component cropModule = (Component) paddock.LinkByName(thisCrop);
+
+      cropModule.Publish("Sow", data);
+   }
+
+
+   public void DoHarvestCrop()
+   {
+      Console.WriteLine(Today + " Harvesting Crop");
+      HarvestType hdata = new HarvestType();
+      hdata.Remove = 0.0;
+      Component cropModule = (Component) paddock.LinkByName(thisCrop);
+      cropModule.Publish("harvest", hdata);
+
+      KillCropType kdata = new KillCropType();
+      kdata.KillFraction = 0.0F;
+      cropModule.Publish("killcrop", kdata);
+      cropModule.Publish("end_crop");
+   } 
+
+   
+/////////// Helpers   
+   /// This method splits values on a comma but also honours double quotes
+   /// ensuring something in double quotes is never split.
+   ///     eg: if text = value1, "value 2, 2a", value3
+   ///     then: words[0] = value1
+   ///           words[1] = value2, 2a
+   ///           words[2] = value3
+   /// All values returned have been trimmed of spaces and double quotes.
+   /// &lt;/summary&gt;
+   public List&lt;string&gt; SplitStringHonouringQuotes(string text, string delimiters)
+   {
+      List&lt;string&gt; ReturnStrings = new List&lt;string&gt;();
+      if (text.Trim() == "")
+         return ReturnStrings;
+
+      bool InsideQuotes = false;
+      int Start = IndexNotOfAny(text, " ".ToCharArray());
+      for (int i = Start; i &lt; text.Length; i++)
+      {
+         if (text[i] == '"')
+            InsideQuotes = !InsideQuotes; // toggle
+
+         else if (!InsideQuotes)
+         {
+            if (delimiters.IndexOf(text[i]) != -1)
+            {
+               // Found a word - store it.
+               if (Start != i)
+                  ReturnStrings.Add(text.Substring(Start, i - Start).Trim(" ".ToCharArray()));
+               Start = i + 1;
+
+            }
+         }
+      }
+      if (Start != text.Length)
+         ReturnStrings.Add(text.Substring(Start, text.Length - Start).Trim(" ".ToCharArray()));
+
+      // remove leading and trailing quote if necessary.
+      for (int i = 0; i &lt; ReturnStrings.Count; i++)
+      {
+         if (ReturnStrings[i][0] == '"' &amp;&amp; ReturnStrings[i][ReturnStrings[i].Length - 1] == '"')
+         {
+            ReturnStrings[i] = ReturnStrings[i].Substring(1, ReturnStrings[i].Length - 2).Trim();
+            if (ReturnStrings[i] == "")
+            {
+               ReturnStrings.RemoveAt(i);
+               i--;
+            }
+         }
+      }
+      return ReturnStrings;
+   }
+   public int IndexNotOfAny(string text, char[] delimiters)
+   {
+      return IndexNotOfAny(text, delimiters, 0);
+   }
+
+   /// &lt;summary&gt;
+   /// This method complements the string function IndexOfAny by
+   /// providing a NOT version. Returns -1 if non of the specified
+   /// characters are found in specified string.
+   /// &lt;/summary&gt;
+   public int IndexNotOfAny(string text, char[] delimiters, int pos)
+   {
+      string DelimitersString = new string(delimiters);
+      for (int i = pos; i &lt; text.Length; i++)
+      {
+         if (DelimitersString.IndexOf(text[i]) == -1)
+            return i;
+      }
+      return -1;
+   }
+}
+  </text>
+      </manager2>
+    </factor>
+    <factor name="Year">
+      <targets>
+        <Target>/simulations/Simulation/clock</Target>
+      </targets>
+      <vars />
+      <clock name="2004">
+        <start_date type="date" description="Enter the start date of the simulation">01/04/2004</start_date>
+        <end_date type="date" description="Enter the end date of the simulation">31/12/2004</end_date>
+      </clock>
+      <clock name="2008">
+        <start_date type="date" description="Enter the start date of the simulation">01/04/2008</start_date>
+        <end_date type="date" description="Enter the end date of the simulation">31/12/2008</end_date>
+      </clock>
+      <clock name="2010">
+        <start_date type="date" description="Enter the start date of the simulation">01/04/2010</start_date>
+        <end_date type="date" description="Enter the end date of the simulation">31/12/2010</end_date>
+      </clock>
+      <clock name="2011">
+        <start_date type="date" description="Enter the start date of the simulation">01/04/2011</start_date>
+        <end_date type="date" description="Enter the end date of the simulation">31/12/2011</end_date>
+      </clock>
+    </factor>
+    <folder name="Station">
+      <folder name="Любашівка">
+        <factor name="met">
+          <targets>
+            <Target>/simulations/Simulation/met</Target>
+          </targets>
+          <vars>
+            <filename>47.85_30.26.met</filename>
+          </vars>
+          <metfile name="met">
+            <filename name="filename" input="yes">47.85_30.26.met</filename>
+          </metfile>
+        </factor>
+        <factor name="Script">
+          <targets>
+            <Target>/simulations/Simulation/paddock/Manager folder/Setup</Target>
+          </targets>
+          <vars>
+            <thisStation>47.85_30.26</thisStation>
+          </vars>
+          <manager2 name="Setup">
+            <ui>
+              <thisCrop type="text" description="Crop to simulate">maize</thisCrop>
+              <csvFile type="text" description="CSV file of treatments">Baseline_with_SM.csv</csvFile>
+              <thisStation type="text" description="Station Name (lat_lng)">46.01_29.76</thisStation>
+            </ui>
+            <text>using System;
+using System.Text;
+
+using System.Collections.Generic;
+using System.IO;
+using ModelFramework;
+
+public class Script 
+{      
+   [Link] public Simulation simulation;
+   [Link] public Paddock paddock;
+   [Input] DateTime Today; 
+   [Param] string csvFile;
+   [Param, Output] string thisCrop;
+   [Param, Output] string thisStation;
+   [Output] int thisYear;
+   
+   private Dictionary&lt;string, string&gt; cultivar;
+   private Dictionary&lt;string, double&gt; density;
+   private double row_spacing = 500; //mm
+   private double depth = 30; // sowing depth (mm)
+   private DateTime datsow;   
+   
+   [EventHandler] public void OnInitialised()
+   {
+      // set up the dictionaries for crop-specific details
+      cultivar = new Dictionary&lt;string, string&gt;();
+      cultivar.Add("Maize", "SC601");
+      cultivar.Add("Sunflower", "default");
+
+      density = new Dictionary&lt;string, double&gt;(); // plants / sq meter
+      density.Add("Maize", 4);
+      density.Add("Sunflower", 3);
+      
+      bool found = false;
+
+      Component clockModule = (Component) simulation.LinkByName("clock");
+      clockModule.Get("year", out thisYear);
+      
+      // Read the table of sowing dates
+      using (StreamReader sr = new StreamReader(csvFile))
+      {
+         List&lt;string&gt; headers = SplitStringHonouringQuotes(sr.ReadLine(), ",");
+         var latCol = headers.IndexOf("Lat");
+         if (latCol &lt; 0) {throw new Exception("Missing Latitude");}
+         
+         var longCol = headers.IndexOf("Long");
+         if (longCol &lt; 0) {throw new Exception("Missing Longitude");}
+                
+         var yearCol = headers.IndexOf("year");
+         if (yearCol &lt; 0) {throw new Exception("Missing year column");}
+
+         var cropCol = headers.IndexOf("crop");
+         if (cropCol &lt; 0) {throw new Exception("Missing crop column");}
+
+         while (!sr.EndOfStream)
+         {
+            string[] row = SplitStringHonouringQuotes(sr.ReadLine(), ",").ToArray();
+            double rowYear = 0;
+            Double.TryParse(row[yearCol], out rowYear);
+            
+            var station = row[latCol].ToString() + "_" + row[longCol].ToString();
+            if (thisStation == station &amp;&amp;
+                thisYear == rowYear &amp;&amp;
+                thisCrop == row[cropCol]) {
+               
+               Console.WriteLine("Found row");
+               found = true;
+               var dCol = headers.IndexOf("datsow");
+               if (dCol &lt; 0) {throw new Exception("Missing sowing date column");}
+
+               datsow = DateTime.Parse(row[dCol]);
+            }
+         }
+      }
+      if (!found) {
+         throw new Exception("No treatment data");
+      }
+   }
+
+   [EventHandler] public void OnPrepare()
+   {
+      Console.WriteLine("Today = " + Today.ToString("dd/MM/yyyy") + " vs " + datsow.ToString("dd/MM/yyyy"));
+      if (DateTime.Compare(datsow, Today) == 0) {
+         DoSowCrop();
+      }
+   }
+   
+   [EventHandler] public void OnPost()
+   {
+      Component cropModule = (Component) paddock.LinkByName(thisCrop);
+      string plantStatus = "";
+      cropModule.Get("plant_status", out plantStatus);
+      if (plantStatus != "out") {
+         string StageName = "";
+         cropModule.Get("StageName", out StageName);
+         if (StageName == "harvest_ripe" || plantStatus == "dead") {
+            DoHarvestCrop();
+         }
+      }
+   }
+   
+   [EventHandler, Description("Sow the crop")] public void DoSowCrop()
+   {
+      Console.WriteLine(Today.ToString("dd/MM/yyyy") + " Sowing Crop");
+      SowType data = new SowType();
+      data.Cultivar = cultivar[thisCrop];
+
+      data.plants = density[thisCrop];
+      data.sowing_depth = depth;
+      data.row_spacing = row_spacing;
+      string currentPaddock;
+      
+      Component cropModule = (Component) paddock.LinkByName(thisCrop);
+
+      cropModule.Publish("Sow", data);
+   }
+
+
+   public void DoHarvestCrop()
+   {
+      Console.WriteLine(Today + " Harvesting Crop");
+      HarvestType hdata = new HarvestType();
+      hdata.Remove = 0.0;
+      Component cropModule = (Component) paddock.LinkByName(thisCrop);
+      cropModule.Publish("harvest", hdata);
+
+      KillCropType kdata = new KillCropType();
+      kdata.KillFraction = 0.0F;
+      cropModule.Publish("killcrop", kdata);
+      cropModule.Publish("end_crop");
+   } 
+
+   
+/////////// Helpers   
+   /// This method splits values on a comma but also honours double quotes
+   /// ensuring something in double quotes is never split.
+   ///     eg: if text = value1, "value 2, 2a", value3
+   ///     then: words[0] = value1
+   ///           words[1] = value2, 2a
+   ///           words[2] = value3
+   /// All values returned have been trimmed of spaces and double quotes.
+   /// &lt;/summary&gt;
+   public List&lt;string&gt; SplitStringHonouringQuotes(string text, string delimiters)
+   {
+      List&lt;string&gt; ReturnStrings = new List&lt;string&gt;();
+      if (text.Trim() == "")
+         return ReturnStrings;
+
+      bool InsideQuotes = false;
+      int Start = IndexNotOfAny(text, " ".ToCharArray());
+      for (int i = Start; i &lt; text.Length; i++)
+      {
+         if (text[i] == '"')
+            InsideQuotes = !InsideQuotes; // toggle
+
+         else if (!InsideQuotes)
+         {
+            if (delimiters.IndexOf(text[i]) != -1)
+            {
+               // Found a word - store it.
+               if (Start != i)
+                  ReturnStrings.Add(text.Substring(Start, i - Start).Trim(" ".ToCharArray()));
+               Start = i + 1;
+
+            }
+         }
+      }
+      if (Start != text.Length)
+         ReturnStrings.Add(text.Substring(Start, text.Length - Start).Trim(" ".ToCharArray()));
+
+      // remove leading and trailing quote if necessary.
+      for (int i = 0; i &lt; ReturnStrings.Count; i++)
+      {
+         if (ReturnStrings[i][0] == '"' &amp;&amp; ReturnStrings[i][ReturnStrings[i].Length - 1] == '"')
+         {
+            ReturnStrings[i] = ReturnStrings[i].Substring(1, ReturnStrings[i].Length - 2).Trim();
+            if (ReturnStrings[i] == "")
+            {
+               ReturnStrings.RemoveAt(i);
+               i--;
+            }
+         }
+      }
+      return ReturnStrings;
+   }
+   public int IndexNotOfAny(string text, char[] delimiters)
+   {
+      return IndexNotOfAny(text, delimiters, 0);
+   }
+
+   /// &lt;summary&gt;
+   /// This method complements the string function IndexOfAny by
+   /// providing a NOT version. Returns -1 if non of the specified
+   /// characters are found in specified string.
+   /// &lt;/summary&gt;
+   public int IndexNotOfAny(string text, char[] delimiters, int pos)
+   {
+      string DelimitersString = new string(delimiters);
+      for (int i = pos; i &lt; text.Length; i++)
+      {
+         if (DelimitersString.IndexOf(text[i]) == -1)
+            return i;
+      }
+      return -1;
+   }
+   
+   // Apsim isnt aware of unicode strings.
+   private string UnicodeString(string text)
+   {
+      return Encoding.UTF8.GetString(Encoding.ASCII.GetBytes(text));
+   }
+}
+  </text>
+          </manager2>
+        </factor>
+      </folder>
+      <folder name="Сарата">
+        <factor name="met">
+          <targets>
+            <Target>/simulations/Simulation/met</Target>
+          </targets>
+          <vars>
+            <filename>46.01_29.76.met</filename>
+          </vars>
+          <metfile name="met">
+            <filename name="filename" input="yes">47.85_30.26.met</filename>
+          </metfile>
+        </factor>
+        <factor name="Script">
+          <targets>
+            <Target>/simulations/Simulation/paddock/Manager folder/Setup</Target>
+          </targets>
+          <vars>
+            <thisStation>46.01_29.76</thisStation>
+          </vars>
+          <manager2 name="Setup">
+            <ui>
+              <thisCrop type="text" description="Crop to simulate">maize</thisCrop>
+              <csvFile type="text" description="CSV file of treatments">Baseline_with_SM.csv</csvFile>
+              <thisStation type="text" description="Station Name (lat_lng)">46.01_29.76</thisStation>
+            </ui>
+            <text>using System;
+using System.Text;
+
+using System.Collections.Generic;
+using System.IO;
+using ModelFramework;
+
+public class Script 
+{      
+   [Link] public Simulation simulation;
+   [Link] public Paddock paddock;
+   [Input] DateTime Today; 
+   [Param] string csvFile;
+   [Param, Output] string thisCrop;
+   [Param, Output] string thisStation;
+   [Output] int thisYear;
+   
+   private Dictionary&lt;string, string&gt; cultivar;
+   private Dictionary&lt;string, double&gt; density;
+   private double row_spacing = 500; //mm
+   private double depth = 30; // sowing depth (mm)
+   private DateTime datsow;   
+   
+   [EventHandler] public void OnInitialised()
+   {
+      // set up the dictionaries for crop-specific details
+      cultivar = new Dictionary&lt;string, string&gt;();
+      cultivar.Add("Maize", "SC601");
+      cultivar.Add("Sunflower", "default");
+
+      density = new Dictionary&lt;string, double&gt;(); // plants / sq meter
+      density.Add("Maize", 4);
+      density.Add("Sunflower", 3);
+      
+      bool found = false;
+
+      Component clockModule = (Component) simulation.LinkByName("clock");
+      clockModule.Get("year", out thisYear);
+      
+      // Read the table of sowing dates
+      using (StreamReader sr = new StreamReader(csvFile))
+      {
+         List&lt;string&gt; headers = SplitStringHonouringQuotes(sr.ReadLine(), ",");
+         var latCol = headers.IndexOf("Lat");
+         if (latCol &lt; 0) {throw new Exception("Missing Latitude");}
+         
+         var longCol = headers.IndexOf("Long");
+         if (longCol &lt; 0) {throw new Exception("Missing Longitude");}
+                
+         var yearCol = headers.IndexOf("year");
+         if (yearCol &lt; 0) {throw new Exception("Missing year column");}
+
+         var cropCol = headers.IndexOf("crop");
+         if (cropCol &lt; 0) {throw new Exception("Missing crop column");}
+
+         while (!sr.EndOfStream)
+         {
+            string[] row = SplitStringHonouringQuotes(sr.ReadLine(), ",").ToArray();
+            double rowYear = 0;
+            Double.TryParse(row[yearCol], out rowYear);
+            
+            var station = row[latCol].ToString() + "_" + row[longCol].ToString();
+            if (thisStation == station &amp;&amp;
+                thisYear == rowYear &amp;&amp;
+                thisCrop == row[cropCol]) {
+               
+               Console.WriteLine("Found row");
+               found = true;
+               var dCol = headers.IndexOf("datsow");
+               if (dCol &lt; 0) {throw new Exception("Missing sowing date column");}
+
+               datsow = DateTime.Parse(row[dCol]);
+            }
+         }
+      }
+      if (!found) {
+         throw new Exception("No treatment data");
+      }
+   }
+
+   [EventHandler] public void OnPrepare()
+   {
+      Console.WriteLine("Today = " + Today.ToString("dd/MM/yyyy") + " vs " + datsow.ToString("dd/MM/yyyy"));
+      if (DateTime.Compare(datsow, Today) == 0) {
+         DoSowCrop();
+      }
+   }
+   
+   [EventHandler] public void OnPost()
+   {
+      Component cropModule = (Component) paddock.LinkByName(thisCrop);
+      string plantStatus = "";
+      cropModule.Get("plant_status", out plantStatus);
+      if (plantStatus != "out") {
+         string StageName = "";
+         cropModule.Get("StageName", out StageName);
+         if (StageName == "harvest_ripe" || plantStatus == "dead") {
+            DoHarvestCrop();
+         }
+      }
+   }
+   
+   [EventHandler, Description("Sow the crop")] public void DoSowCrop()
+   {
+      Console.WriteLine(Today.ToString("dd/MM/yyyy") + " Sowing Crop");
+      SowType data = new SowType();
+      data.Cultivar = cultivar[thisCrop];
+
+      data.plants = density[thisCrop];
+      data.sowing_depth = depth;
+      data.row_spacing = row_spacing;
+      string currentPaddock;
+      
+      Component cropModule = (Component) paddock.LinkByName(thisCrop);
+
+      cropModule.Publish("Sow", data);
+   }
+
+
+   public void DoHarvestCrop()
+   {
+      Console.WriteLine(Today + " Harvesting Crop");
+      HarvestType hdata = new HarvestType();
+      hdata.Remove = 0.0;
+      Component cropModule = (Component) paddock.LinkByName(thisCrop);
+      cropModule.Publish("harvest", hdata);
+
+      KillCropType kdata = new KillCropType();
+      kdata.KillFraction = 0.0F;
+      cropModule.Publish("killcrop", kdata);
+      cropModule.Publish("end_crop");
+   } 
+
+   
+/////////// Helpers   
+   /// This method splits values on a comma but also honours double quotes
+   /// ensuring something in double quotes is never split.
+   ///     eg: if text = value1, "value 2, 2a", value3
+   ///     then: words[0] = value1
+   ///           words[1] = value2, 2a
+   ///           words[2] = value3
+   /// All values returned have been trimmed of spaces and double quotes.
+   /// &lt;/summary&gt;
+   public List&lt;string&gt; SplitStringHonouringQuotes(string text, string delimiters)
+   {
+      List&lt;string&gt; ReturnStrings = new List&lt;string&gt;();
+      if (text.Trim() == "")
+         return ReturnStrings;
+
+      bool InsideQuotes = false;
+      int Start = IndexNotOfAny(text, " ".ToCharArray());
+      for (int i = Start; i &lt; text.Length; i++)
+      {
+         if (text[i] == '"')
+            InsideQuotes = !InsideQuotes; // toggle
+
+         else if (!InsideQuotes)
+         {
+            if (delimiters.IndexOf(text[i]) != -1)
+            {
+               // Found a word - store it.
+               if (Start != i)
+                  ReturnStrings.Add(text.Substring(Start, i - Start).Trim(" ".ToCharArray()));
+               Start = i + 1;
+
+            }
+         }
+      }
+      if (Start != text.Length)
+         ReturnStrings.Add(text.Substring(Start, text.Length - Start).Trim(" ".ToCharArray()));
+
+      // remove leading and trailing quote if necessary.
+      for (int i = 0; i &lt; ReturnStrings.Count; i++)
+      {
+         if (ReturnStrings[i][0] == '"' &amp;&amp; ReturnStrings[i][ReturnStrings[i].Length - 1] == '"')
+         {
+            ReturnStrings[i] = ReturnStrings[i].Substring(1, ReturnStrings[i].Length - 2).Trim();
+            if (ReturnStrings[i] == "")
+            {
+               ReturnStrings.RemoveAt(i);
+               i--;
+            }
+         }
+      }
+      return ReturnStrings;
+   }
+   public int IndexNotOfAny(string text, char[] delimiters)
+   {
+      return IndexNotOfAny(text, delimiters, 0);
+   }
+
+   /// &lt;summary&gt;
+   /// This method complements the string function IndexOfAny by
+   /// providing a NOT version. Returns -1 if non of the specified
+   /// characters are found in specified string.
+   /// &lt;/summary&gt;
+   public int IndexNotOfAny(string text, char[] delimiters, int pos)
+   {
+      string DelimitersString = new string(delimiters);
+      for (int i = pos; i &lt; text.Length; i++)
+      {
+         if (DelimitersString.IndexOf(text[i]) == -1)
+            return i;
+      }
+      return -1;
+   }
+   
+   // Apsim isnt aware of unicode strings.
+   private string UnicodeString(string text)
+   {
+      return Encoding.UTF8.GetString(Encoding.ASCII.GetBytes(text));
+   }
+}
+  </text>
+          </manager2>
+        </factor>
+      </folder>
+      <folder name="Сербка">
+        <factor name="met">
+          <targets>
+            <Target>/simulations/Simulation/met</Target>
+          </targets>
+          <vars>
+            <filename>47.01_30.75.met</filename>
+          </vars>
+          <metfile name="met">
+            <filename name="filename" input="yes">47.85_30.26.met</filename>
+          </metfile>
+        </factor>
+        <factor name="Script">
+          <targets>
+            <Target>/simulations/Simulation/paddock/Manager folder/Setup</Target>
+          </targets>
+          <vars>
+            <thisStation>47.01_30.75</thisStation>
+          </vars>
+          <manager2 name="Setup">
+            <ui>
+              <thisCrop type="text" description="Crop to simulate">maize</thisCrop>
+              <csvFile type="text" description="CSV file of treatments">Baseline_with_SM.csv</csvFile>
+              <thisStation type="text" description="Station Name (lat_lng)">46.01_29.76</thisStation>
+            </ui>
+            <text>using System;
+using System.Text;
+
+using System.Collections.Generic;
+using System.IO;
+using ModelFramework;
+
+public class Script 
+{      
+   [Link] public Simulation simulation;
+   [Link] public Paddock paddock;
+   [Input] DateTime Today; 
+   [Param] string csvFile;
+   [Param, Output] string thisCrop;
+   [Param, Output] string thisStation;
+   [Output] int thisYear;
+   
+   private Dictionary&lt;string, string&gt; cultivar;
+   private Dictionary&lt;string, double&gt; density;
+   private double row_spacing = 500; //mm
+   private double depth = 30; // sowing depth (mm)
+   private DateTime datsow;   
+   
+   [EventHandler] public void OnInitialised()
+   {
+      // set up the dictionaries for crop-specific details
+      cultivar = new Dictionary&lt;string, string&gt;();
+      cultivar.Add("Maize", "SC601");
+      cultivar.Add("Sunflower", "default");
+
+      density = new Dictionary&lt;string, double&gt;(); // plants / sq meter
+      density.Add("Maize", 4);
+      density.Add("Sunflower", 3);
+      
+      bool found = false;
+
+      Component clockModule = (Component) simulation.LinkByName("clock");
+      clockModule.Get("year", out thisYear);
+      
+      // Read the table of sowing dates
+      using (StreamReader sr = new StreamReader(csvFile))
+      {
+         List&lt;string&gt; headers = SplitStringHonouringQuotes(sr.ReadLine(), ",");
+         var latCol = headers.IndexOf("Lat");
+         if (latCol &lt; 0) {throw new Exception("Missing Latitude");}
+         
+         var longCol = headers.IndexOf("Long");
+         if (longCol &lt; 0) {throw new Exception("Missing Longitude");}
+                
+         var yearCol = headers.IndexOf("year");
+         if (yearCol &lt; 0) {throw new Exception("Missing year column");}
+
+         var cropCol = headers.IndexOf("crop");
+         if (cropCol &lt; 0) {throw new Exception("Missing crop column");}
+
+         while (!sr.EndOfStream)
+         {
+            string[] row = SplitStringHonouringQuotes(sr.ReadLine(), ",").ToArray();
+            double rowYear = 0;
+            Double.TryParse(row[yearCol], out rowYear);
+            
+            var station = row[latCol].ToString() + "_" + row[longCol].ToString();
+            if (thisStation == station &amp;&amp;
+                thisYear == rowYear &amp;&amp;
+                thisCrop == row[cropCol]) {
+               
+               Console.WriteLine("Found row");
+               found = true;
+               var dCol = headers.IndexOf("datsow");
+               if (dCol &lt; 0) {throw new Exception("Missing sowing date column");}
+
+               datsow = DateTime.Parse(row[dCol]);
+            }
+         }
+      }
+      if (!found) {
+         throw new Exception("No treatment data");
+      }
+   }
+
+   [EventHandler] public void OnPrepare()
+   {
+      Console.WriteLine("Today = " + Today.ToString("dd/MM/yyyy") + " vs " + datsow.ToString("dd/MM/yyyy"));
+      if (DateTime.Compare(datsow, Today) == 0) {
+         DoSowCrop();
+      }
+   }
+   
+   [EventHandler] public void OnPost()
+   {
+      Component cropModule = (Component) paddock.LinkByName(thisCrop);
+      string plantStatus = "";
+      cropModule.Get("plant_status", out plantStatus);
+      if (plantStatus != "out") {
+         string StageName = "";
+         cropModule.Get("StageName", out StageName);
+         if (StageName == "harvest_ripe" || plantStatus == "dead") {
+            DoHarvestCrop();
+         }
+      }
+   }
+   
+   [EventHandler, Description("Sow the crop")] public void DoSowCrop()
+   {
+      Console.WriteLine(Today.ToString("dd/MM/yyyy") + " Sowing Crop");
+      SowType data = new SowType();
+      data.Cultivar = cultivar[thisCrop];
+
+      data.plants = density[thisCrop];
+      data.sowing_depth = depth;
+      data.row_spacing = row_spacing;
+      string currentPaddock;
+      
+      Component cropModule = (Component) paddock.LinkByName(thisCrop);
+
+      cropModule.Publish("Sow", data);
+   }
+
+
+   public void DoHarvestCrop()
+   {
+      Console.WriteLine(Today + " Harvesting Crop");
+      HarvestType hdata = new HarvestType();
+      hdata.Remove = 0.0;
+      Component cropModule = (Component) paddock.LinkByName(thisCrop);
+      cropModule.Publish("harvest", hdata);
+
+      KillCropType kdata = new KillCropType();
+      kdata.KillFraction = 0.0F;
+      cropModule.Publish("killcrop", kdata);
+      cropModule.Publish("end_crop");
+   } 
+
+   
+/////////// Helpers   
+   /// This method splits values on a comma but also honours double quotes
+   /// ensuring something in double quotes is never split.
+   ///     eg: if text = value1, "value 2, 2a", value3
+   ///     then: words[0] = value1
+   ///           words[1] = value2, 2a
+   ///           words[2] = value3
+   /// All values returned have been trimmed of spaces and double quotes.
+   /// &lt;/summary&gt;
+   public List&lt;string&gt; SplitStringHonouringQuotes(string text, string delimiters)
+   {
+      List&lt;string&gt; ReturnStrings = new List&lt;string&gt;();
+      if (text.Trim() == "")
+         return ReturnStrings;
+
+      bool InsideQuotes = false;
+      int Start = IndexNotOfAny(text, " ".ToCharArray());
+      for (int i = Start; i &lt; text.Length; i++)
+      {
+         if (text[i] == '"')
+            InsideQuotes = !InsideQuotes; // toggle
+
+         else if (!InsideQuotes)
+         {
+            if (delimiters.IndexOf(text[i]) != -1)
+            {
+               // Found a word - store it.
+               if (Start != i)
+                  ReturnStrings.Add(text.Substring(Start, i - Start).Trim(" ".ToCharArray()));
+               Start = i + 1;
+
+            }
+         }
+      }
+      if (Start != text.Length)
+         ReturnStrings.Add(text.Substring(Start, text.Length - Start).Trim(" ".ToCharArray()));
+
+      // remove leading and trailing quote if necessary.
+      for (int i = 0; i &lt; ReturnStrings.Count; i++)
+      {
+         if (ReturnStrings[i][0] == '"' &amp;&amp; ReturnStrings[i][ReturnStrings[i].Length - 1] == '"')
+         {
+            ReturnStrings[i] = ReturnStrings[i].Substring(1, ReturnStrings[i].Length - 2).Trim();
+            if (ReturnStrings[i] == "")
+            {
+               ReturnStrings.RemoveAt(i);
+               i--;
+            }
+         }
+      }
+      return ReturnStrings;
+   }
+   public int IndexNotOfAny(string text, char[] delimiters)
+   {
+      return IndexNotOfAny(text, delimiters, 0);
+   }
+
+   /// &lt;summary&gt;
+   /// This method complements the string function IndexOfAny by
+   /// providing a NOT version. Returns -1 if non of the specified
+   /// characters are found in specified string.
+   /// &lt;/summary&gt;
+   public int IndexNotOfAny(string text, char[] delimiters, int pos)
+   {
+      string DelimitersString = new string(delimiters);
+      for (int i = pos; i &lt; text.Length; i++)
+      {
+         if (DelimitersString.IndexOf(text[i]) == -1)
+            return i;
+      }
+      return -1;
+   }
+   
+   // Apsim isnt aware of unicode strings.
+   private string UnicodeString(string text)
+   {
+      return Encoding.UTF8.GetString(Encoding.ASCII.GetBytes(text));
+   }
+}
+  </text>
+          </manager2>
+        </factor>
+      </folder>
+      <folder name="Ізмаїл">
+        <factor name="met">
+          <targets>
+            <Target>/simulations/Simulation/met</Target>
+          </targets>
+          <vars>
+            <filename>45.36_28.85.met</filename>
+          </vars>
+          <metfile name="met">
+            <filename name="filename" input="yes">47.85_30.26.met</filename>
+          </metfile>
+        </factor>
+        <factor name="Script">
+          <targets>
+            <Target>/simulations/Simulation/paddock/Manager folder/Setup</Target>
+          </targets>
+          <vars>
+            <thisStation>45.36_28.85</thisStation>
+          </vars>
+          <manager2 name="Setup">
+            <ui>
+              <thisCrop type="text" description="Crop to simulate">maize</thisCrop>
+              <csvFile type="text" description="CSV file of treatments">Baseline_with_SM.csv</csvFile>
+              <thisStation type="text" description="Station Name (lat_lng)">46.01_29.76</thisStation>
+            </ui>
+            <text>using System;
+using System.Text;
+
+using System.Collections.Generic;
+using System.IO;
+using ModelFramework;
+
+public class Script 
+{      
+   [Link] public Simulation simulation;
+   [Link] public Paddock paddock;
+   [Input] DateTime Today; 
+   [Param] string csvFile;
+   [Param, Output] string thisCrop;
+   [Param, Output] string thisStation;
+   [Output] int thisYear;
+   
+   private Dictionary&lt;string, string&gt; cultivar;
+   private Dictionary&lt;string, double&gt; density;
+   private double row_spacing = 500; //mm
+   private double depth = 30; // sowing depth (mm)
+   private DateTime datsow;   
+   
+   [EventHandler] public void OnInitialised()
+   {
+      // set up the dictionaries for crop-specific details
+      cultivar = new Dictionary&lt;string, string&gt;();
+      cultivar.Add("Maize", "SC601");
+      cultivar.Add("Sunflower", "default");
+
+      density = new Dictionary&lt;string, double&gt;(); // plants / sq meter
+      density.Add("Maize", 4);
+      density.Add("Sunflower", 3);
+      
+      bool found = false;
+
+      Component clockModule = (Component) simulation.LinkByName("clock");
+      clockModule.Get("year", out thisYear);
+      
+      // Read the table of sowing dates
+      using (StreamReader sr = new StreamReader(csvFile))
+      {
+         List&lt;string&gt; headers = SplitStringHonouringQuotes(sr.ReadLine(), ",");
+         var latCol = headers.IndexOf("Lat");
+         if (latCol &lt; 0) {throw new Exception("Missing Latitude");}
+         
+         var longCol = headers.IndexOf("Long");
+         if (longCol &lt; 0) {throw new Exception("Missing Longitude");}
+                
+         var yearCol = headers.IndexOf("year");
+         if (yearCol &lt; 0) {throw new Exception("Missing year column");}
+
+         var cropCol = headers.IndexOf("crop");
+         if (cropCol &lt; 0) {throw new Exception("Missing crop column");}
+
+         while (!sr.EndOfStream)
+         {
+            string[] row = SplitStringHonouringQuotes(sr.ReadLine(), ",").ToArray();
+            double rowYear = 0;
+            Double.TryParse(row[yearCol], out rowYear);
+            
+            var station = row[latCol].ToString() + "_" + row[longCol].ToString();
+            if (thisStation == station &amp;&amp;
+                thisYear == rowYear &amp;&amp;
+                thisCrop == row[cropCol]) {
+               
+               Console.WriteLine("Found row");
+               found = true;
+               var dCol = headers.IndexOf("datsow");
+               if (dCol &lt; 0) {throw new Exception("Missing sowing date column");}
+
+               datsow = DateTime.Parse(row[dCol]);
+            }
+         }
+      }
+      if (!found) {
+         throw new Exception("No treatment data");
+      }
+   }
+
+   [EventHandler] public void OnPrepare()
+   {
+      Console.WriteLine("Today = " + Today.ToString("dd/MM/yyyy") + " vs " + datsow.ToString("dd/MM/yyyy"));
+      if (DateTime.Compare(datsow, Today) == 0) {
+         DoSowCrop();
+      }
+   }
+   
+   [EventHandler] public void OnPost()
+   {
+      Component cropModule = (Component) paddock.LinkByName(thisCrop);
+      string plantStatus = "";
+      cropModule.Get("plant_status", out plantStatus);
+      if (plantStatus != "out") {
+         string StageName = "";
+         cropModule.Get("StageName", out StageName);
+         if (StageName == "harvest_ripe" || plantStatus == "dead") {
+            DoHarvestCrop();
+         }
+      }
+   }
+   
+   [EventHandler, Description("Sow the crop")] public void DoSowCrop()
+   {
+      Console.WriteLine(Today.ToString("dd/MM/yyyy") + " Sowing Crop");
+      SowType data = new SowType();
+      data.Cultivar = cultivar[thisCrop];
+
+      data.plants = density[thisCrop];
+      data.sowing_depth = depth;
+      data.row_spacing = row_spacing;
+      string currentPaddock;
+      
+      Component cropModule = (Component) paddock.LinkByName(thisCrop);
+
+      cropModule.Publish("Sow", data);
+   }
+
+
+   public void DoHarvestCrop()
+   {
+      Console.WriteLine(Today + " Harvesting Crop");
+      HarvestType hdata = new HarvestType();
+      hdata.Remove = 0.0;
+      Component cropModule = (Component) paddock.LinkByName(thisCrop);
+      cropModule.Publish("harvest", hdata);
+
+      KillCropType kdata = new KillCropType();
+      kdata.KillFraction = 0.0F;
+      cropModule.Publish("killcrop", kdata);
+      cropModule.Publish("end_crop");
+   } 
+
+   
+/////////// Helpers   
+   /// This method splits values on a comma but also honours double quotes
+   /// ensuring something in double quotes is never split.
+   ///     eg: if text = value1, "value 2, 2a", value3
+   ///     then: words[0] = value1
+   ///           words[1] = value2, 2a
+   ///           words[2] = value3
+   /// All values returned have been trimmed of spaces and double quotes.
+   /// &lt;/summary&gt;
+   public List&lt;string&gt; SplitStringHonouringQuotes(string text, string delimiters)
+   {
+      List&lt;string&gt; ReturnStrings = new List&lt;string&gt;();
+      if (text.Trim() == "")
+         return ReturnStrings;
+
+      bool InsideQuotes = false;
+      int Start = IndexNotOfAny(text, " ".ToCharArray());
+      for (int i = Start; i &lt; text.Length; i++)
+      {
+         if (text[i] == '"')
+            InsideQuotes = !InsideQuotes; // toggle
+
+         else if (!InsideQuotes)
+         {
+            if (delimiters.IndexOf(text[i]) != -1)
+            {
+               // Found a word - store it.
+               if (Start != i)
+                  ReturnStrings.Add(text.Substring(Start, i - Start).Trim(" ".ToCharArray()));
+               Start = i + 1;
+
+            }
+         }
+      }
+      if (Start != text.Length)
+         ReturnStrings.Add(text.Substring(Start, text.Length - Start).Trim(" ".ToCharArray()));
+
+      // remove leading and trailing quote if necessary.
+      for (int i = 0; i &lt; ReturnStrings.Count; i++)
+      {
+         if (ReturnStrings[i][0] == '"' &amp;&amp; ReturnStrings[i][ReturnStrings[i].Length - 1] == '"')
+         {
+            ReturnStrings[i] = ReturnStrings[i].Substring(1, ReturnStrings[i].Length - 2).Trim();
+            if (ReturnStrings[i] == "")
+            {
+               ReturnStrings.RemoveAt(i);
+               i--;
+            }
+         }
+      }
+      return ReturnStrings;
+   }
+   public int IndexNotOfAny(string text, char[] delimiters)
+   {
+      return IndexNotOfAny(text, delimiters, 0);
+   }
+
+   /// &lt;summary&gt;
+   /// This method complements the string function IndexOfAny by
+   /// providing a NOT version. Returns -1 if non of the specified
+   /// characters are found in specified string.
+   /// &lt;/summary&gt;
+   public int IndexNotOfAny(string text, char[] delimiters, int pos)
+   {
+      string DelimitersString = new string(delimiters);
+      for (int i = pos; i &lt; text.Length; i++)
+      {
+         if (DelimitersString.IndexOf(text[i]) == -1)
+            return i;
+      }
+      return -1;
+   }
+   
+   // Apsim isnt aware of unicode strings.
+   private string UnicodeString(string text)
+   {
+      return Encoding.UTF8.GetString(Encoding.ASCII.GetBytes(text));
+   }
+}
+  </text>
+          </manager2>
+        </factor>
+      </folder>
+      <folder name="Асканія-Нова">
+        <factor name="met">
+          <targets>
+            <Target>/simulations/Simulation/met</Target>
+          </targets>
+          <vars>
+            <filename>46.45_33.88.met</filename>
+          </vars>
+          <metfile name="met">
+            <filename name="filename" input="yes">47.85_30.26.met</filename>
+          </metfile>
+        </factor>
+        <factor name="Script">
+          <targets>
+            <Target>/simulations/Simulation/paddock/Manager folder/Setup</Target>
+          </targets>
+          <vars>
+            <thisStation>46.45_33.88</thisStation>
+          </vars>
+          <manager2 name="Setup">
+            <ui>
+              <thisCrop type="text" description="Crop to simulate">maize</thisCrop>
+              <csvFile type="text" description="CSV file of treatments">Baseline_with_SM.csv</csvFile>
+              <thisStation type="text" description="Station Name (lat_lng)">46.01_29.76</thisStation>
+            </ui>
+            <text>using System;
+using System.Text;
+
+using System.Collections.Generic;
+using System.IO;
+using ModelFramework;
+
+public class Script 
+{      
+   [Link] public Simulation simulation;
+   [Link] public Paddock paddock;
+   [Input] DateTime Today; 
+   [Param] string csvFile;
+   [Param, Output] string thisCrop;
+   [Param, Output] string thisStation;
+   [Output] int thisYear;
+   
+   private Dictionary&lt;string, string&gt; cultivar;
+   private Dictionary&lt;string, double&gt; density;
+   private double row_spacing = 500; //mm
+   private double depth = 30; // sowing depth (mm)
+   private DateTime datsow;   
+   
+   [EventHandler] public void OnInitialised()
+   {
+      // set up the dictionaries for crop-specific details
+      cultivar = new Dictionary&lt;string, string&gt;();
+      cultivar.Add("Maize", "SC601");
+      cultivar.Add("Sunflower", "default");
+
+      density = new Dictionary&lt;string, double&gt;(); // plants / sq meter
+      density.Add("Maize", 4);
+      density.Add("Sunflower", 3);
+      
+      bool found = false;
+
+      Component clockModule = (Component) simulation.LinkByName("clock");
+      clockModule.Get("year", out thisYear);
+      
+      // Read the table of sowing dates
+      using (StreamReader sr = new StreamReader(csvFile))
+      {
+         List&lt;string&gt; headers = SplitStringHonouringQuotes(sr.ReadLine(), ",");
+         var latCol = headers.IndexOf("Lat");
+         if (latCol &lt; 0) {throw new Exception("Missing Latitude");}
+         
+         var longCol = headers.IndexOf("Long");
+         if (longCol &lt; 0) {throw new Exception("Missing Longitude");}
+                
+         var yearCol = headers.IndexOf("year");
+         if (yearCol &lt; 0) {throw new Exception("Missing year column");}
+
+         var cropCol = headers.IndexOf("crop");
+         if (cropCol &lt; 0) {throw new Exception("Missing crop column");}
+
+         while (!sr.EndOfStream)
+         {
+            string[] row = SplitStringHonouringQuotes(sr.ReadLine(), ",").ToArray();
+            double rowYear = 0;
+            Double.TryParse(row[yearCol], out rowYear);
+            
+            var station = row[latCol].ToString() + "_" + row[longCol].ToString();
+            if (thisStation == station &amp;&amp;
+                thisYear == rowYear &amp;&amp;
+                thisCrop == row[cropCol]) {
+               
+               Console.WriteLine("Found row");
+               found = true;
+               var dCol = headers.IndexOf("datsow");
+               if (dCol &lt; 0) {throw new Exception("Missing sowing date column");}
+
+               datsow = DateTime.Parse(row[dCol]);
+            }
+         }
+      }
+      if (!found) {
+         throw new Exception("No treatment data");
+      }
+   }
+
+   [EventHandler] public void OnPrepare()
+   {
+      Console.WriteLine("Today = " + Today.ToString("dd/MM/yyyy") + " vs " + datsow.ToString("dd/MM/yyyy"));
+      if (DateTime.Compare(datsow, Today) == 0) {
+         DoSowCrop();
+      }
+   }
+   
+   [EventHandler] public void OnPost()
+   {
+      Component cropModule = (Component) paddock.LinkByName(thisCrop);
+      string plantStatus = "";
+      cropModule.Get("plant_status", out plantStatus);
+      if (plantStatus != "out") {
+         string StageName = "";
+         cropModule.Get("StageName", out StageName);
+         if (StageName == "harvest_ripe" || plantStatus == "dead") {
+            DoHarvestCrop();
+         }
+      }
+   }
+   
+   [EventHandler, Description("Sow the crop")] public void DoSowCrop()
+   {
+      Console.WriteLine(Today.ToString("dd/MM/yyyy") + " Sowing Crop");
+      SowType data = new SowType();
+      data.Cultivar = cultivar[thisCrop];
+
+      data.plants = density[thisCrop];
+      data.sowing_depth = depth;
+      data.row_spacing = row_spacing;
+      string currentPaddock;
+      
+      Component cropModule = (Component) paddock.LinkByName(thisCrop);
+
+      cropModule.Publish("Sow", data);
+   }
+
+
+   public void DoHarvestCrop()
+   {
+      Console.WriteLine(Today + " Harvesting Crop");
+      HarvestType hdata = new HarvestType();
+      hdata.Remove = 0.0;
+      Component cropModule = (Component) paddock.LinkByName(thisCrop);
+      cropModule.Publish("harvest", hdata);
+
+      KillCropType kdata = new KillCropType();
+      kdata.KillFraction = 0.0F;
+      cropModule.Publish("killcrop", kdata);
+      cropModule.Publish("end_crop");
+   } 
+
+   
+/////////// Helpers   
+   /// This method splits values on a comma but also honours double quotes
+   /// ensuring something in double quotes is never split.
+   ///     eg: if text = value1, "value 2, 2a", value3
+   ///     then: words[0] = value1
+   ///           words[1] = value2, 2a
+   ///           words[2] = value3
+   /// All values returned have been trimmed of spaces and double quotes.
+   /// &lt;/summary&gt;
+   public List&lt;string&gt; SplitStringHonouringQuotes(string text, string delimiters)
+   {
+      List&lt;string&gt; ReturnStrings = new List&lt;string&gt;();
+      if (text.Trim() == "")
+         return ReturnStrings;
+
+      bool InsideQuotes = false;
+      int Start = IndexNotOfAny(text, " ".ToCharArray());
+      for (int i = Start; i &lt; text.Length; i++)
+      {
+         if (text[i] == '"')
+            InsideQuotes = !InsideQuotes; // toggle
+
+         else if (!InsideQuotes)
+         {
+            if (delimiters.IndexOf(text[i]) != -1)
+            {
+               // Found a word - store it.
+               if (Start != i)
+                  ReturnStrings.Add(text.Substring(Start, i - Start).Trim(" ".ToCharArray()));
+               Start = i + 1;
+
+            }
+         }
+      }
+      if (Start != text.Length)
+         ReturnStrings.Add(text.Substring(Start, text.Length - Start).Trim(" ".ToCharArray()));
+
+      // remove leading and trailing quote if necessary.
+      for (int i = 0; i &lt; ReturnStrings.Count; i++)
+      {
+         if (ReturnStrings[i][0] == '"' &amp;&amp; ReturnStrings[i][ReturnStrings[i].Length - 1] == '"')
+         {
+            ReturnStrings[i] = ReturnStrings[i].Substring(1, ReturnStrings[i].Length - 2).Trim();
+            if (ReturnStrings[i] == "")
+            {
+               ReturnStrings.RemoveAt(i);
+               i--;
+            }
+         }
+      }
+      return ReturnStrings;
+   }
+   public int IndexNotOfAny(string text, char[] delimiters)
+   {
+      return IndexNotOfAny(text, delimiters, 0);
+   }
+
+   /// &lt;summary&gt;
+   /// This method complements the string function IndexOfAny by
+   /// providing a NOT version. Returns -1 if non of the specified
+   /// characters are found in specified string.
+   /// &lt;/summary&gt;
+   public int IndexNotOfAny(string text, char[] delimiters, int pos)
+   {
+      string DelimitersString = new string(delimiters);
+      for (int i = pos; i &lt; text.Length; i++)
+      {
+         if (DelimitersString.IndexOf(text[i]) == -1)
+            return i;
+      }
+      return -1;
+   }
+   
+   // Apsim isnt aware of unicode strings.
+   private string UnicodeString(string text)
+   {
+      return Encoding.UTF8.GetString(Encoding.ASCII.GetBytes(text));
+   }
+}
+  </text>
+          </manager2>
+        </factor>
+      </folder>
+      <folder name="Херсон">
+        <factor name="met">
+          <targets>
+            <Target>/simulations/Simulation/met</Target>
+          </targets>
+          <vars>
+            <filename>46.63_32.57.met</filename>
+          </vars>
+          <metfile name="met">
+            <filename name="filename" input="yes">47.85_30.26.met</filename>
+          </metfile>
+        </factor>
+        <factor name="Script">
+          <targets>
+            <Target>/simulations/Simulation/paddock/Manager folder/Setup</Target>
+          </targets>
+          <vars>
+            <thisStation>46.63_32.57</thisStation>
+          </vars>
+          <manager2 name="Setup">
+            <ui>
+              <thisCrop type="text" description="Crop to simulate">maize</thisCrop>
+              <csvFile type="text" description="CSV file of treatments">Baseline_with_SM.csv</csvFile>
+              <thisStation type="text" description="Station Name (lat_lng)">46.01_29.76</thisStation>
+            </ui>
+            <text>using System;
+using System.Text;
+
+using System.Collections.Generic;
+using System.IO;
+using ModelFramework;
+
+public class Script 
+{      
+   [Link] public Simulation simulation;
+   [Link] public Paddock paddock;
+   [Input] DateTime Today; 
+   [Param] string csvFile;
+   [Param, Output] string thisCrop;
+   [Param, Output] string thisStation;
+   [Output] int thisYear;
+   
+   private Dictionary&lt;string, string&gt; cultivar;
+   private Dictionary&lt;string, double&gt; density;
+   private double row_spacing = 500; //mm
+   private double depth = 30; // sowing depth (mm)
+   private DateTime datsow;   
+   
+   [EventHandler] public void OnInitialised()
+   {
+      // set up the dictionaries for crop-specific details
+      cultivar = new Dictionary&lt;string, string&gt;();
+      cultivar.Add("Maize", "SC601");
+      cultivar.Add("Sunflower", "default");
+
+      density = new Dictionary&lt;string, double&gt;(); // plants / sq meter
+      density.Add("Maize", 4);
+      density.Add("Sunflower", 3);
+      
+      bool found = false;
+
+      Component clockModule = (Component) simulation.LinkByName("clock");
+      clockModule.Get("year", out thisYear);
+      
+      // Read the table of sowing dates
+      using (StreamReader sr = new StreamReader(csvFile))
+      {
+         List&lt;string&gt; headers = SplitStringHonouringQuotes(sr.ReadLine(), ",");
+         var latCol = headers.IndexOf("Lat");
+         if (latCol &lt; 0) {throw new Exception("Missing Latitude");}
+         
+         var longCol = headers.IndexOf("Long");
+         if (longCol &lt; 0) {throw new Exception("Missing Longitude");}
+                
+         var yearCol = headers.IndexOf("year");
+         if (yearCol &lt; 0) {throw new Exception("Missing year column");}
+
+         var cropCol = headers.IndexOf("crop");
+         if (cropCol &lt; 0) {throw new Exception("Missing crop column");}
+
+         while (!sr.EndOfStream)
+         {
+            string[] row = SplitStringHonouringQuotes(sr.ReadLine(), ",").ToArray();
+            double rowYear = 0;
+            Double.TryParse(row[yearCol], out rowYear);
+            
+            var station = row[latCol].ToString() + "_" + row[longCol].ToString();
+            if (thisStation == station &amp;&amp;
+                thisYear == rowYear &amp;&amp;
+                thisCrop == row[cropCol]) {
+               
+               Console.WriteLine("Found row");
+               found = true;
+               var dCol = headers.IndexOf("datsow");
+               if (dCol &lt; 0) {throw new Exception("Missing sowing date column");}
+
+               datsow = DateTime.Parse(row[dCol]);
+            }
+         }
+      }
+      if (!found) {
+         throw new Exception("No treatment data");
+      }
+   }
+
+   [EventHandler] public void OnPrepare()
+   {
+      Console.WriteLine("Today = " + Today.ToString("dd/MM/yyyy") + " vs " + datsow.ToString("dd/MM/yyyy"));
+      if (DateTime.Compare(datsow, Today) == 0) {
+         DoSowCrop();
+      }
+   }
+   
+   [EventHandler] public void OnPost()
+   {
+      Component cropModule = (Component) paddock.LinkByName(thisCrop);
+      string plantStatus = "";
+      cropModule.Get("plant_status", out plantStatus);
+      if (plantStatus != "out") {
+         string StageName = "";
+         cropModule.Get("StageName", out StageName);
+         if (StageName == "harvest_ripe" || plantStatus == "dead") {
+            DoHarvestCrop();
+         }
+      }
+   }
+   
+   [EventHandler, Description("Sow the crop")] public void DoSowCrop()
+   {
+      Console.WriteLine(Today.ToString("dd/MM/yyyy") + " Sowing Crop");
+      SowType data = new SowType();
+      data.Cultivar = cultivar[thisCrop];
+
+      data.plants = density[thisCrop];
+      data.sowing_depth = depth;
+      data.row_spacing = row_spacing;
+      string currentPaddock;
+      
+      Component cropModule = (Component) paddock.LinkByName(thisCrop);
+
+      cropModule.Publish("Sow", data);
+   }
+
+
+   public void DoHarvestCrop()
+   {
+      Console.WriteLine(Today + " Harvesting Crop");
+      HarvestType hdata = new HarvestType();
+      hdata.Remove = 0.0;
+      Component cropModule = (Component) paddock.LinkByName(thisCrop);
+      cropModule.Publish("harvest", hdata);
+
+      KillCropType kdata = new KillCropType();
+      kdata.KillFraction = 0.0F;
+      cropModule.Publish("killcrop", kdata);
+      cropModule.Publish("end_crop");
+   } 
+
+   
+/////////// Helpers   
+   /// This method splits values on a comma but also honours double quotes
+   /// ensuring something in double quotes is never split.
+   ///     eg: if text = value1, "value 2, 2a", value3
+   ///     then: words[0] = value1
+   ///           words[1] = value2, 2a
+   ///           words[2] = value3
+   /// All values returned have been trimmed of spaces and double quotes.
+   /// &lt;/summary&gt;
+   public List&lt;string&gt; SplitStringHonouringQuotes(string text, string delimiters)
+   {
+      List&lt;string&gt; ReturnStrings = new List&lt;string&gt;();
+      if (text.Trim() == "")
+         return ReturnStrings;
+
+      bool InsideQuotes = false;
+      int Start = IndexNotOfAny(text, " ".ToCharArray());
+      for (int i = Start; i &lt; text.Length; i++)
+      {
+         if (text[i] == '"')
+            InsideQuotes = !InsideQuotes; // toggle
+
+         else if (!InsideQuotes)
+         {
+            if (delimiters.IndexOf(text[i]) != -1)
+            {
+               // Found a word - store it.
+               if (Start != i)
+                  ReturnStrings.Add(text.Substring(Start, i - Start).Trim(" ".ToCharArray()));
+               Start = i + 1;
+
+            }
+         }
+      }
+      if (Start != text.Length)
+         ReturnStrings.Add(text.Substring(Start, text.Length - Start).Trim(" ".ToCharArray()));
+
+      // remove leading and trailing quote if necessary.
+      for (int i = 0; i &lt; ReturnStrings.Count; i++)
+      {
+         if (ReturnStrings[i][0] == '"' &amp;&amp; ReturnStrings[i][ReturnStrings[i].Length - 1] == '"')
+         {
+            ReturnStrings[i] = ReturnStrings[i].Substring(1, ReturnStrings[i].Length - 2).Trim();
+            if (ReturnStrings[i] == "")
+            {
+               ReturnStrings.RemoveAt(i);
+               i--;
+            }
+         }
+      }
+      return ReturnStrings;
+   }
+   public int IndexNotOfAny(string text, char[] delimiters)
+   {
+      return IndexNotOfAny(text, delimiters, 0);
+   }
+
+   /// &lt;summary&gt;
+   /// This method complements the string function IndexOfAny by
+   /// providing a NOT version. Returns -1 if non of the specified
+   /// characters are found in specified string.
+   /// &lt;/summary&gt;
+   public int IndexNotOfAny(string text, char[] delimiters, int pos)
+   {
+      string DelimitersString = new string(delimiters);
+      for (int i = pos; i &lt; text.Length; i++)
+      {
+         if (DelimitersString.IndexOf(text[i]) == -1)
+            return i;
+      }
+      return -1;
+   }
+   
+   // Apsim isnt aware of unicode strings.
+   private string UnicodeString(string text)
+   {
+      return Encoding.UTF8.GetString(Encoding.ASCII.GetBytes(text));
+   }
+}
+  </text>
+          </manager2>
+        </factor>
+      </folder>
+    </folder>
+  </factorial>
+</folder>
